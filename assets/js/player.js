@@ -30,4 +30,19 @@ let PlayerMoves = {
         let attackValues = [calcOutputDamage, numberOfHits];
         return attackValues;
     }
+    // Enemy attacks
+    let enemyAttack = function() {
+        let calcBaseDamage;
+        if (enemy.stamina > 0){
+            calcBaseDamage = enemy.strength * enemy.stamina / 1000;
+        } else {
+            calcBaseDamage = enemy.strength * enemy.agility / 1000;
+        }
+        let offsetDamage = Math.floor(Math.random() * Math.floor(10));
+        let calcOutputDamage = calcBaseDamage + offsetDamage;
+        // Number of hits
+        let numberOfHits = Math.floor(Math.random() * Math.floor(enemy.agility / 10) / 2) + 1;
+        let attackValues = [calcOutputDamage, numberOfHits];
+        return attackValues;
+    }
 }
