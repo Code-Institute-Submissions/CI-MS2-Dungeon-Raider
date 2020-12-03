@@ -14,8 +14,7 @@ let PlayerMoves = {
         // Who attacks first
         let getPlayerSpeed = player.speed;
         let getEnemySpeed = enemy.speed;
-    }
-    // Player attacks
+            // Player attacks
     let playerAttack = function() {
         let calcBaseDamage;
         if (player.stamina > 0){
@@ -59,7 +58,20 @@ let PlayerMoves = {
             getPlayerHealth.innerHTML = 'Health: ' + player.health;
             getEnemyHealth.innerHTML = 'Health: 0';
         } else {
-            getEnemyHealth.innerHTML = 'Health: ' + enemy.health;            
+            getEnemyHealth.innerHTML = 'Health: ' + enemy.health;
+            // Enemy attacks
+            let enemyAttackValues = enemyAttack();
+                    let totalDamage = enemyAttackValues[0] * enemyAttackValues[1];
+        player.health = player.health - totalDamage;
+        alert("Enemy hit " + enemyAttackValues[0] + " damage " + enemyAttackValues[1] + " times.");
+        if (player.health <= 0) {
+            alert("You lose! Refresh the browser to play again.");
+            getPlayerHealth.innerHTML = 'Health: 0';
+            getEnemyHealth.innerHTML = 'Health: ' + enemy.health;
+        } else {
+            getPlayerHealth.innerHTML = 'Health: ' + player.health;
         }
+    }
+    }
     }
 }
