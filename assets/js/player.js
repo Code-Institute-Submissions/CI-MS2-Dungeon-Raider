@@ -9,3 +9,10 @@ function Player(classType, health, stamina, strength, agility, speed) {
     this.speed = speed;
 }
 
+let PlayerMoves = {
+    calcAttack: function () {
+        // Who attacks first
+        let getPlayerSpeed = player.speed;
+        let getEnemySpeed = enemy.speed;
+    }
+}
