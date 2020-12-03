@@ -32,5 +32,28 @@ let GameManager = {
         let enemy03 = new Enemy("Giant", 500, 100, 400, 50, 75);
         let enemy04 = new Enemy("Orc", 400, 100, 200, 125, 125);
         let enemy05 = new Enemy("Dragon", 600, 100, 450, 200, 100);
+
+        let chooseRandomEnemy = Math.floor(Math.random() * Math.floor(6));
+        switch (chooseRandomEnemy) {
+            case 0:
+                enemy = enemy00;
+                break;
+            case 1:
+                enemy = enemy01;
+                break;                
+            case 2:
+                enemy = enemy02;
+                break;
+            case 3:
+                enemy = enemy03;
+                break;
+            case 4:
+                enemy = enemy04;
+                break;
+            case 5:
+                enemy = enemy05;
+                break;                                                
+        }
+        
     }
 }
