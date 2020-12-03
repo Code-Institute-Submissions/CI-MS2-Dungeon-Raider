@@ -24,6 +24,13 @@ let GameManager = {
     setFight: function() {
         let getHeader = document.querySelector(".header");
         let getActions = document.querySelector(".actions");
-        let getEnemy = document.querySelector(".enemy");  
+        let getEnemy = document.querySelector(".enemy");
+        // Create enemy
+        let enemy00 = new Enemy("Goblin", 200, 100, 100, 225, 150);
+        let enemy01 = new Enemy("Troll", 300, 100, 175, 175, 125);
+        let enemy02 = new Enemy("Golem", 500, 100, 300, 75, 75);
+        let enemy03 = new Enemy("Giant", 500, 100, 400, 50, 75);
+        let enemy04 = new Enemy("Orc", 400, 100, 200, 125, 125);
+        let enemy05 = new Enemy("Dragon", 600, 100, 450, 200, 100);
     }
 }
