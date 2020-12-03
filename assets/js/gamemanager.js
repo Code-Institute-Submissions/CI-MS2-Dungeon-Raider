@@ -32,8 +32,8 @@ let GameManager = {
         let enemy03 = new Enemy("Giant", 500, 100, 400, 50, 75);
         let enemy04 = new Enemy("Orc", 400, 100, 200, 125, 125);
         let enemy05 = new Enemy("Dragon", 600, 100, 450, 200, 100);
-
-        let chooseRandomEnemy = Math.floor(Math.random() * Math.floor(6));
+        
+        let chooseRandomEnemy = Math.floor(Math.random() * Math.floor(5));
         switch (chooseRandomEnemy) {
             case 0:
                 enemy = enemy00;
@@ -56,6 +56,6 @@ let GameManager = {
         }
         getHeader.innerHTML = '<p>Task: Choose your move</p>';
         getActions.innerHTML = '<a href="#" class="btn-prefight" onclick="PlayerMoves.calcAttack()">Attack!</a>';
-        getEnemy.innerHTML = '<img src="assets/images/' + enemyType.toLowerCase() + '.png" class="img-avatar"><div><h3>' + enemyType + '</h3><p>Health: ' + enemy.health + '</p><p>Stamina: ' + enemy.stamina + '</p><p>Strength: ' + enemy.strength + '</p><p>Agility: ' + enemy.agility + '</p><p>Speed: ' + enemy.speed + '</p></div>';
+        getEnemy.innerHTML = '<img src="assets/images/' + enemy.enemyType.toLowerCase() + '.png"' + enemy.enemyType + '"class="img-avatar"><div><h3>' + enemy.enemyType + '</h3><p>Health: ' + enemy.health + '</p><p>Stamina: ' + enemy.stamina + '</p><p>Strength: ' + enemy.strength + '</p><p>Agility: ' + enemy.agility + '</p><p>Speed: ' + enemy.speed + '</p></div>';
     }
 }
