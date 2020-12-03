@@ -48,4 +48,11 @@ let PlayerMoves = {
     // Get player/enemy health
     let getPlayerHealth = document.querySelector(".health-player");
     let getEnemyHealth = document.querySelector(".health-enemy");
+    // Initiate attacks
+    if (getEnemySpeed >= getEnemySpeed) {
+        let playerAttackValues = playerAttack();
+        let totalDamage = playerAttackValues[0] * playerAttackValues[1];
+        enemy.health = enemy.health - totalDamage;
+        alert("You hit " + playerAttackValues[0] + " damage " + playerAttackValues[1] + " times.");
+    }
 }
