@@ -45,4 +45,7 @@ let PlayerMoves = {
         let attackValues = [calcOutputDamage, numberOfHits];
         return attackValues;
     }
+    // Get player/enemy health
+    let getPlayerHealth = document.querySelector(".health-player");
+    let getEnemyHealth = document.querySelector(".health-enemy");
 }
