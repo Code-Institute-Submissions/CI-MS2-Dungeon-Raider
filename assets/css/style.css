@@ -9,6 +9,11 @@ body {
     background-color: #000;
 }
 
+/*--------------------------------------------CONTAINERS*/
+.game-container {
+    text-align: center;
+}
+
 /*--------------------------------------------HEROES*/
 
 .img-avatar {
