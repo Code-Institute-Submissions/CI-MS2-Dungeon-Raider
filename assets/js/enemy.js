@@ -11,6 +11,7 @@ function Enemy(enemyType, health, strength, agility, speed) {
 function nextEnemy() {
     let getHeader = document.querySelector(".header");
     let getActions = document.querySelector(".actions");
+    let getCounter = document.querySelector(".counter");
     let getEnemy = document.querySelector(".enemy");
 
     let enemy00 = new Enemy("Goblin", 200, 100, 225, 150);
@@ -41,7 +42,7 @@ function nextEnemy() {
             enemy = enemy05;
             break;                                                
         }
-    getHeader.innerHTML = '<p>Task: Choose your move</p>';
+    getCounter.style.visibility = "visible";
     getActions.innerHTML = ' <a href="#" class="btn-prefight" onclick="PlayerMoves.calcAttack()">Attack!</a> ' + ' <a href="#" class="btn-prefight" onclick="PlayerMoves.calcCounter()">Counter!</a> ' + ' <a href="#" class="btn-prefight" onclick="PlayerMoves.calcHeal()">Heal!</a> ';
     getEnemy.innerHTML = '<img src="assets/images/' + enemy.enemyType.toLowerCase() + '.png" alt="' + enemy.enemyType + '"class="img-avatar"><div><h3>' + enemy.enemyType + '</h3><p class="health-enemy">Health: ' + enemy.health + '</p><p>Strength: ' + enemy.strength + '</p><p>Agility: ' + enemy.agility + '</p><p>Speed: ' + enemy.speed + '</p></div>';
 }
