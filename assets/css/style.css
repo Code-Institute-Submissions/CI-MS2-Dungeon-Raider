@@ -36,6 +36,12 @@ h1 {
 .header h3 em {
     font-size: 1.5rem;
 }
+a:hover {
+    color: #fff;
+}
+a {
+    color: #fff;
+}
 /*--------------------------------------------CONTAINERS*/
 .game-container {
     text-align: center;
