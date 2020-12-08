@@ -30,12 +30,14 @@ body {
 }
 h1 {
     padding: 2rem;
+    text-decoration: underline;
+    font-size: 3rem;
 }
 .counter p {
     font-size: 1.6rem;
 }
 .header h3 em {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 a:hover {
     color: #fff;
