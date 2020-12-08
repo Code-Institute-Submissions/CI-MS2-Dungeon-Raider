@@ -26,7 +26,7 @@ let GameManager = {
         let getActions = document.querySelector(".actions");
         let getCounter = document.querySelector(".counter");
         let getEnemy = document.querySelector(".enemy");
-        // Create enemy
+        // Create random enemy
         let enemy00 = new Enemy("Goblin", 200, 100, 225, 150);
         let enemy01 = new Enemy("Troll", 300, 175, 175, 125);
         let enemy02 = new Enemy("Golem", 500, 250, 75, 75);

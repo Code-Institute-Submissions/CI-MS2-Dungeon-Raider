@@ -1,5 +1,5 @@
 let player;
-
+// Player constructor
 function Player(classType, health, strength, agility, speed) {
     this.classType = classType;
     this.health = health;
@@ -9,6 +9,7 @@ function Player(classType, health, strength, agility, speed) {
 }
 
 let PlayerMoves = {
+    // Attack - Player move
     calcAttack: function () {
         // Who attacks first
         let getPlayerSpeed = player.speed;
@@ -91,6 +92,7 @@ let PlayerMoves = {
             }
         }        
     },
+    // Counter - Player move
     calcCounter: function () {
         // Who attacks first
         let getPlayerSpeed = player.speed;
@@ -173,6 +175,7 @@ let PlayerMoves = {
             }
         }
     },
+    // Heal - Player move
     calcHeal: function () {
         // Who attacks first
         let getPlayerSpeed = player.speed;

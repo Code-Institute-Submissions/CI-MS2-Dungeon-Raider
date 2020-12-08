@@ -1,5 +1,5 @@
 let enemy;
-
+// Enemy constructor
 function Enemy(enemyType, health, strength, agility, speed) {
     this.enemyType = enemyType;
     this.health = health;
@@ -7,7 +7,7 @@ function Enemy(enemyType, health, strength, agility, speed) {
     this.agility = agility;
     this.speed = speed;
 }
-
+// Generate new random enemy
 function nextEnemy() {
     let getHeader = document.querySelector(".header");
     let getActions = document.querySelector(".actions");
