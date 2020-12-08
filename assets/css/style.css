@@ -39,5 +39,8 @@ body {
     font-size: 1.4rem;
     text-align: center;
     color: #fff;
-    padding: 2rem;
+    padding: 1rem;
+    border: 2px solid #fff;
+    display: inline-block;
+    margin: auto;
 }
