@@ -33,6 +33,9 @@ h1 {
 .counter p {
     font-size: 1.2rem;
 }
+.header h3 em {
+    font-size: 1.5rem;
+}
 /*--------------------------------------------CONTAINERS*/
 .game-container {
     text-align: center;
