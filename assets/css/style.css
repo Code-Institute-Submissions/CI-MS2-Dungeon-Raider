@@ -21,18 +21,25 @@ body {
 }
 .interface h3 {
     text-decoration: underline;
+    font-size: 1.5rem;
 }
 .enemy h3 {
     text-decoration: underline;
+    font-size: 1.5rem;
 }
 h1 {
     padding: 2rem;
+}
+.counter p {
+    font-size: 1.2rem;
 }
 /*--------------------------------------------CONTAINERS*/
 .game-container {
     text-align: center;
 }
-
+.counter {
+    visibility: hidden;
+}
 /*--------------------------------------------IMAGES*/
 .img-avatar {
     height: 8rem;
