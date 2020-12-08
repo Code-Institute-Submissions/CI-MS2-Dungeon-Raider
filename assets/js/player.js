@@ -42,51 +42,51 @@ let PlayerMoves = {
         // Initiate attacks
         if (getPlayerSpeed >= getEnemySpeed) {
             let playerAttackValues = playerAttack();
-            let totalDamage = playerAttackValues[0] * playerAttackValues[1];
+            let totalDamage = Math.round(playerAttackValues[0]) * playerAttackValues[1];
             enemy.health = enemy.health - totalDamage;
-            alert("You hit " + playerAttackValues[0] + " damage " + playerAttackValues[1] + " times.");
+            alert("You hit " + Math.round(playerAttackValues[0]) + " damage " + playerAttackValues[1] + " times.");
             if (enemy.health <= 0) {
                 nextEnemy();
-                getPlayerHealth.innerHTML = 'Health: ' + player.health;
+                getPlayerHealth.innerHTML = 'Health: ' + Math.round(player.health);
                 getEnemyHealth.innerHTML = 'Health: 0';
             } else {
-                getEnemyHealth.innerHTML = 'Health: ' + enemy.health;
+                getEnemyHealth.innerHTML = 'Health: ' + Math.round(enemy.health);
                 // Enemy attacks
                 let enemyAttackValues = enemyAttack();
-                let totalDamage = enemyAttackValues[0] * enemyAttackValues[1];
+                let totalDamage = Math.round(enemyAttackValues[0]) * enemyAttackValues[1];
                 player.health = player.health - totalDamage;
-                alert("Enemy hit " + enemyAttackValues[0] + " damage " + enemyAttackValues[1] + " times.");
+                alert("Enemy hit " + Math.round(enemyAttackValues[0]) + " damage " + enemyAttackValues[1] + " times.");
                 if (player.health <= 0) {
                     alert("You lose! Refresh browser to play again");
                     getPlayerHealth.innerHTML = 'Health: 0';
-                    getEnemyHealth.innerHTML = 'Health: ' + enemy.health;
+                    getEnemyHealth.innerHTML = 'Health: ' + Math.round(enemy.health);
                 } else {
-                    getPlayerHealth.innerHTML = 'Health: ' + player.health;
+                    getPlayerHealth.innerHTML = 'Health: ' + Math.round(player.health);
                 }
             }
         }
         else if (getPlayerSpeed >= getEnemySpeed) {
             let enemyAttackValues = enemyAttack();
-            let totalDamage = enemyAttackValues[0] * enemyAttackValues[1];
+            let totalDamage = Math.round(enemyAttackValues[0]) * enemyAttackValues[1];
             player.health = player.health - totalDamage;
-            alert("Enemy hit " + enemyAttackValues[0] + " damage " + enemyAttackValues[1] + " times.");
+            alert("Enemy hit " + Math.round(enemyAttackValues[0]) + " damage " + enemyAttackValues[1] + " times.");
             if (player.health <= 0) {
                 alert("You lose! Refresh browser to play again.");
-                getEnemyHealth.innerHTML = 'Health: ' + enemy.health;
+                getEnemyHealth.innerHTML = 'Health: ' + Math.round(enemy.health);
                 getPlayerHealth.innerHTML = 'Health: 0';
             } else {
-                getPlayerHealth.innerHTML = 'Health: ' + player.health;
+                getPlayerHealth.innerHTML = 'Health: ' + Math.round(player.health);
                 // Player attacks
                 let playerAttackValues = playerAttack();
-                let totalDamage = playerAttackValues[0] * playerAttackValues[1];
+                let totalDamage = Math.round(playerAttackValues[0]) * playerAttackValues[1];
                 enemy.health = enemy.health - totalDamage;
-                alert("You hit " + playerAttackValues[0] + " damage " + playerAttackValues[1] + " times.");
+                alert("You hit " + Math.round(playerAttackValues[0]) + " damage " + playerAttackValues[1] + " times.");
                 if (enemy.health <= 0) {
                     nextEnemy();
                     getEnemyHealth.innerHTML = 'Health: 0';
-                    getPlayerHealth.innerHTML = 'Health: ' + player.health;
+                    getPlayerHealth.innerHTML = 'Health: ' + Math.round(player.health);
                 } else {
-                    getEnemyHealth.innerHTML = 'Health: ' + enemy.health;
+                    getEnemyHealth.innerHTML = 'Health: ' + Math.round(enemy.health);
                 }
             }
         }        
@@ -124,51 +124,51 @@ let PlayerMoves = {
         // Initiate attacks
         if (getPlayerSpeed >= getEnemySpeed) {
             let playerAttackValues = playerAttack();
-            let totalDamage = playerAttackValues[0] * playerAttackValues[1];
+            let totalDamage = Math.round(playerAttackValues[0]) * playerAttackValues[1];
             enemy.health = enemy.health - totalDamage;
-            alert("You hit " + playerAttackValues[0] + " damage " + playerAttackValues[1] + " times.");
+            alert("You hit " + Math.round(playerAttackValues[0]) + " damage " + playerAttackValues[1] + " times.");
             if (enemy.health <= 0) {
                 nextEnemy();
-                getPlayerHealth.innerHTML = 'Health: ' + player.health;
+                getPlayerHealth.innerHTML = 'Health: ' + Math.round(player.health);
                 getEnemyHealth.innerHTML = 'Health: 0';
             } else {
-                getEnemyHealth.innerHTML = 'Health: ' + enemy.health;
+                getEnemyHealth.innerHTML = 'Health: ' + Math.round(enemy.health);
                 // Enemy attacks
                 let enemyAttackValues = enemyAttack();
-                let totalDamage = enemyAttackValues[0] * enemyAttackValues[1];
+                let totalDamage = Math.round(enemyAttackValues[0]) * enemyAttackValues[1];
                 player.health = player.health - totalDamage;
-                alert("Enemy hit " + enemyAttackValues[0] + " damage " + enemyAttackValues[1] + " times.");
+                alert("Enemy hit " + Math.round(enemyAttackValues[0]) + " damage " + enemyAttackValues[1] + " times.");
                 if (player.health <= 0) {
                     alert("You lose! Refresh browser to play again");
                     getPlayerHealth.innerHTML = 'Health: 0';
-                    getEnemyHealth.innerHTML = 'Health: ' + enemy.health;
+                    getEnemyHealth.innerHTML = 'Health: ' + Math.round(enemy.health);
                 } else {
-                    getPlayerHealth.innerHTML = 'Health: ' + player.health;
+                    getPlayerHealth.innerHTML = 'Health: ' + Math.round(player.health);
                 }
             }
         }
         else if (getPlayerSpeed >= getEnemySpeed) {
             let enemyAttackValues = enemyAttack();
-            let totalDamage = enemyAttackValues[0] * enemyAttackValues[1];
+            let totalDamage = Math.round(enemyAttackValues[0]) * enemyAttackValues[1];
             player.health = player.health - totalDamage;
-            alert("Enemy hit " + enemyAttackValues[0] + " damage " + enemyAttackValues[1] + " times.");
+            alert("Enemy hit " + Math.round(enemyAttackValues[0]) + " damage " + enemyAttackValues[1] + " times.");
             if (player.health <= 0) {
                 alert("You lose! Refresh browser to play again.");
-                getEnemyHealth.innerHTML = 'Health: ' + enemy.health;
+                getEnemyHealth.innerHTML = 'Health: ' + Math.round(enemy.health);
                 getPlayerHealth.innerHTML = 'Health: 0';
             } else {
-                getPlayerHealth.innerHTML = 'Health: ' + player.health;
+                getPlayerHealth.innerHTML = 'Health: ' + Math.round(player.health);
                 // Player attacks
                 let playerAttackValues = playerAttack();
-                let totalDamage = playerAttackValues[0] * playerAttackValues[1];
+                let totalDamage = Math.round(playerAttackValues[0]) * playerAttackValues[1];
                 enemy.health = enemy.health - totalDamage;
-                alert("You hit " + playerAttackValues[0] + " damage " + playerAttackValues[1] + " times.");
+                alert("You hit " + Math.round(playerAttackValues[0]) + " damage " + playerAttackValues[1] + " times.");
                 if (enemy.health <= 0) {
                     nextEnemy();
                     getEnemyHealth.innerHTML = 'Health: 0';
-                    getPlayerHealth.innerHTML = 'Health: ' + player.health;
+                    getPlayerHealth.innerHTML = 'Health: ' + Math.round(player.health);
                 } else {
-                    getEnemyHealth.innerHTML = 'Health: ' + enemy.health;
+                    getEnemyHealth.innerHTML = 'Health: ' + Math.round(enemy.health);
                 }
             }
         }
