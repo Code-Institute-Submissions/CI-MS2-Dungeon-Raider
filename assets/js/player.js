@@ -181,7 +181,7 @@ let PlayerMoves = {
         // Player Heals
         let playerHeal = function() {
             let healthIncrease;
-            healthIncrease = player.health + 250
+            healthIncrease = player.health + 250;
         }
 
         // Enemy attacks
@@ -235,7 +235,7 @@ let PlayerMoves = {
             } else {
                 getPlayerHealth.innerHTML = 'Health: ' + player.health;
                 // Player attacks
-                playerHeal()
+                playerHeal();
                 alert("You healed for " + 250 + ".");
                 if (enemy.health <= 0) {
                     nextEnemy();
