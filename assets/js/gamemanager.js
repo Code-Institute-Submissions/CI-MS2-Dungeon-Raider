@@ -6,11 +6,11 @@ let GameManager = {
     resetPlayer: function(classType) {
         switch (classType) {
             case "Arthur":
-                player = new Player(classType, 500, 100, 200, 150, 150);
+                player = new Player(classType, 500, 200, 150, 150);
                 break;
         }
         let getInterface = document.querySelector(".interface");
-        getInterface.innerHTML = '<img src="assets/images/' + classType.toLowerCase() + '.png" class="img-avatar"><div><h3>' + classType + '</h3><p class="health-player">Health: ' + player.health + '</p><p>Stamina: ' + player.stamina + '</p><p>Strength: ' + player.strength + '</p><p>Agility: ' + player.agility + '</p><p>Speed: ' + player.speed + '</p></div>';
+        getInterface.innerHTML = '<img src="assets/images/' + classType.toLowerCase() + '.png" class="img-avatar"><div><h3>' + classType + '</h3><p class="health-player">Health: ' + player.health + '</p><p>Strength: ' + player.strength + '</p><p>Agility: ' + player.agility + '</p><p>Speed: ' + player.speed + '</p></div>';
     },
     setPreFight: function() {
         let getHeader = document.querySelector(".header");
@@ -26,12 +26,12 @@ let GameManager = {
         let getActions = document.querySelector(".actions");
         let getEnemy = document.querySelector(".enemy");
         // Create enemy
-        let enemy00 = new Enemy("Goblin", 200, 100, 100, 225, 150);
-        let enemy01 = new Enemy("Troll", 300, 100, 175, 175, 125);
-        let enemy02 = new Enemy("Golem", 500, 100, 350, 75, 75);
-        let enemy03 = new Enemy("Giant", 500, 100, 400, 50, 75);
-        let enemy04 = new Enemy("Orc", 400, 100, 200, 125, 125);
-        let enemy05 = new Enemy("Dragon", 550, 100, 400, 200, 100);
+        let enemy00 = new Enemy("Goblin", 200, 100, 225, 150);
+        let enemy01 = new Enemy("Troll", 300, 175, 175, 125);
+        let enemy02 = new Enemy("Golem", 500, 350, 75, 75);
+        let enemy03 = new Enemy("Giant", 500, 400, 50, 75);
+        let enemy04 = new Enemy("Orc", 400, 200, 125, 125);
+        let enemy05 = new Enemy("Dragon", 550, 400, 200, 100);
         
         let chooseRandomEnemy = Math.floor(Math.random() * Math.floor(6));
         switch (chooseRandomEnemy) {
@@ -56,6 +56,6 @@ let GameManager = {
         }
         getHeader.innerHTML = '<p>Task: Choose your move</p>';
         getActions.innerHTML = ' <a href="#" class="btn-prefight" onclick="PlayerMoves.calcAttack()">Attack!</a> ' + ' <a href="#" class="btn-prefight" onclick="PlayerMoves.calcDefend()">Defend!</a> ' + ' <a href="#" class="btn-prefight" onclick="PlayerMoves.calcHeal()">Heal!</a> ';
-        getEnemy.innerHTML = '<img src="assets/images/' + enemy.enemyType.toLowerCase() + '.png" alt="' + enemy.enemyType + '"class="img-avatar"><div><h3>' + enemy.enemyType + '</h3><p class="health-enemy">Health: ' + enemy.health + '</p><p>Stamina: ' + enemy.stamina + '</p><p>Strength: ' + enemy.strength + '</p><p>Agility: ' + enemy.agility + '</p><p>Speed: ' + enemy.speed + '</p></div>';
+        getEnemy.innerHTML = '<img src="assets/images/' + enemy.enemyType.toLowerCase() + '.png" alt="' + enemy.enemyType + '"class="img-avatar"><div><h3>' + enemy.enemyType + '</h3><p class="health-enemy">Health: ' + enemy.health + '</p><p>Strength: ' + enemy.strength + '</p><p>Agility: ' + enemy.agility + '</p><p>Speed: ' + enemy.speed + '</p></div>';
     }
 }
