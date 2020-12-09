@@ -20,7 +20,7 @@ function nextEnemy() {
     let enemy02 = new Enemy("Golem", 500, 250, 75, 75);
     let enemy03 = new Enemy("Giant", 500, 300, 50, 75);
     let enemy04 = new Enemy("Orc", 400, 200, 125, 125);
-    let enemy05 = new Enemy("Dragon", 550, 300, 200, 100);
+    let enemy05 = new Enemy("Dragon", 550, 300, 150, 100);
 
     let chooseRandomEnemy = Math.floor(Math.random() * Math.floor(6));
     switch (chooseRandomEnemy) {
