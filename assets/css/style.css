@@ -45,6 +45,9 @@ a:hover {
 a {
     color: #fff;
 }
+.enemy-counter p {
+    font-size: 1.6rem;
+}
 /*--------------------------------------------CONTAINERS*/
 .game-container {
     text-align: center;
