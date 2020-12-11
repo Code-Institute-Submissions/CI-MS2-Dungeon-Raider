@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Dungeon Raider</title>
 </head>
@@ -15,8 +18,32 @@
             <h1>Dungeon Raider</h1>
             <h3><em>Storm the castle, defeat the enemies, claim the treasure!</em></h3>
             <img src="assets/images/castle.png" alt="Castle" id="castle-image">
-            <button class="how-to-play">How to Play</button>
-            <p>Choose your hero : </p>
+        </div>
+<!-- ================================================HOW TO PLAY MODAL================================================-->            
+        <div class="modal-container">
+            <button class="how-to-play" data-toggle="modal" data-target="#exampleModal">How to Play</button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">How to play:</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                         <p>Your mission is to storm the castle, defeat three enemies and claim the treasure</p>
+                         <p>You have three moves which you are able to perform</p>
+                         <p>Attack - Attack the enemy with all your might</p>
+                         <p>Counter - Attacks the enemy with -25% attack power, but incoming damage is reduced by 50%</p>
+                         <p>Heal - Heals yourself for 250</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 <!-- ================================================COUNTER CONTAINER================================================-->
         <div class="counter">
@@ -24,6 +51,7 @@
         </div>
 <!-- ================================================INTERFACE CONTAINER================================================-->
         <div class="interface">
+            <p>Choose your hero : </p>
             <a href="#" onclick="GameManager.setGameStart('Arthur')">
                 <img src="assets/images/arthur.png" alt="Hero" class="img-avatar">
                 <div>

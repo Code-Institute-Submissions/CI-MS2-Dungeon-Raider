@@ -16,8 +16,10 @@ let GameManager = {
         let getHeader = document.querySelector(".header");
         let getActions = document.querySelector(".actions");
         let getArena = document.querySelector(".arena");
+        let getModal = document.querySelector(".modal-container");
 
         getHeader.innerHTML = '';
+        getModal.remove();
         getActions.innerHTML = '<a href="#" class="btn-prefight" onclick="GameManager.setFight()">Search for enemy!</a>';
         getArena.style.visibility = "visible";
     },
