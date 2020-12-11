@@ -16,9 +16,11 @@ body {
 }
 .interface p {
     font-size: 1.4rem;
+    line-height: 1.2rem;
 }
 .enemy p {
     font-size: 1.4rem;
+    line-height: 1.2rem;
 }
 .interface h3 {
     text-decoration: underline;
@@ -48,12 +50,27 @@ a {
 .enemy-counter p {
     font-size: 1.6rem;
 }
+.player-damage {
+    font-size: 1.4rem;
+}
+.enemy-damage {
+    font-size: 1.4rem;
+}
 /*--------------------------------------------CONTAINERS*/
 .game-container {
     text-align: center;
 }
 .counter {
     visibility: hidden;
+}
+.arena {
+    visibility: hidden;
+    height: 5rem;
+    width: 100%;
+    margin: 1rem auto;
+    font-size: 1.4rem;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
 }
 /*--------------------------------------------IMAGES*/
 .img-avatar {

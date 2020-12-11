@@ -37,15 +37,18 @@ let PlayerMoves = {
             let attackValues = [calcOutputDamage, numberOfHits];
             return attackValues;            
         }
-        // Get Player/Enemy health to change later
+        // Get Player/Enemy health and damage to change later
         let getPlayerHealth = document.querySelector(".health-player");
         let getEnemyHealth = document.querySelector(".health-enemy");
+        let getArena = document.querySelector(".arena");
+        let getPlayerDamage = document.querySelector(".player-damage");
+        let getEnemyDamage = document.querySelector(".enemy-damage");
         // Initiate attacks
         if (getPlayerSpeed >= getEnemySpeed) {
             let playerAttackValues = playerAttack();
             let totalDamage = Math.round(playerAttackValues[0]) * playerAttackValues[1];
             enemy.health = enemy.health - totalDamage;
-            alert("You hit " + Math.round(playerAttackValues[0]) + " damage " + playerAttackValues[1] + " times.");
+            getPlayerDamage.innerHTML = 'You hit ' + Math.round(playerAttackValues[0]) + ' damage ' + playerAttackValues[1] + ' times, totalling ' + Math.round(playerAttackValues[0] * playerAttackValues[1]);
             if (enemy.health <= 0) {
                 nextEnemy();
                 getPlayerHealth.innerHTML = 'Health: ' + Math.round(player.health);
@@ -56,7 +59,7 @@ let PlayerMoves = {
                 let enemyAttackValues = enemyAttack();
                 let totalDamage = Math.round(enemyAttackValues[0]) * enemyAttackValues[1];
                 player.health = player.health - totalDamage;
-                alert("Enemy hit " + Math.round(enemyAttackValues[0]) + " damage " + enemyAttackValues[1] + " times.");
+                getEnemyDamage.innerHTML = 'Enemy hit ' + Math.round(enemyAttackValues[0]) + ' damage ' + enemyAttackValues[1] + ' times, totalling ' + Math.round(enemyAttackValues[0] * enemyAttackValues[1]);
                 if (player.health <= 0) {
                     alert("You lose! Refresh browser to play again");
                     getPlayerHealth.innerHTML = 'Health: 0';
@@ -70,7 +73,7 @@ let PlayerMoves = {
             let enemyAttackValues = enemyAttack();
             let totalDamage = Math.round(enemyAttackValues[0]) * enemyAttackValues[1];
             player.health = player.health - totalDamage;
-            alert("Enemy hit " + Math.round(enemyAttackValues[0]) + " damage " + enemyAttackValues[1] + " times.");
+            getEnemyDamage.innerHTML = 'Enemy hit ' + Math.round(enemyAttackValues[0]) + ' damage ' + enemyAttackValues[1] + ' times, totalling ' + Math.round(enemyAttackValues[0] * enemyAttackValues[1]);
             if (player.health <= 0) {
                 alert("You lose! Refresh browser to play again.");
                 getEnemyHealth.innerHTML = 'Health: ' + Math.round(enemy.health);
@@ -81,7 +84,7 @@ let PlayerMoves = {
                 let playerAttackValues = playerAttack();
                 let totalDamage = Math.round(playerAttackValues[0]) * playerAttackValues[1];
                 enemy.health = enemy.health - totalDamage;
-                alert("You hit " + Math.round(playerAttackValues[0]) + " damage " + playerAttackValues[1] + " times.");
+                getPlayerDamage.innerHTML = 'You hit ' + Math.round(playerAttackValues[0]) + ' damage ' + playerAttackValues[1] + ' times, totalling ' + Math.round(playerAttackValues[0] * playerAttackValues[1]);
                 if (enemy.health <= 0) {
                     nextEnemy();
                     getEnemyHealth.innerHTML = 'Health: 0';
@@ -120,15 +123,18 @@ let PlayerMoves = {
             let attackValues = [calcOutputDamage, numberOfHits];
             return attackValues;           
         }
-        // Get Player/Enemy health to change later
+        // Get Player/Enemy health and damage to change later
         let getPlayerHealth = document.querySelector(".health-player");
         let getEnemyHealth = document.querySelector(".health-enemy");
+        let getArena = document.querySelector(".arena");
+        let getPlayerDamage = document.querySelector(".player-damage");
+        let getEnemyDamage = document.querySelector(".enemy-damage");
         // Initiate attacks
         if (getPlayerSpeed >= getEnemySpeed) {
             let playerAttackValues = playerAttack();
             let totalDamage = Math.round(playerAttackValues[0]) * playerAttackValues[1];
             enemy.health = enemy.health - totalDamage;
-            alert("You hit " + Math.round(playerAttackValues[0]) + " damage " + playerAttackValues[1] + " times.");
+            getPlayerDamage.innerHTML = 'You hit ' + Math.round(playerAttackValues[0]) + ' damage ' + playerAttackValues[1] + ' times, totalling ' + Math.round(playerAttackValues[0] * playerAttackValues[1]);
             if (enemy.health <= 0) {
                 nextEnemy();
                 getPlayerHealth.innerHTML = 'Health: ' + Math.round(player.health);
@@ -139,7 +145,7 @@ let PlayerMoves = {
                 let enemyAttackValues = enemyAttack();
                 let totalDamage = Math.round(enemyAttackValues[0]) * enemyAttackValues[1];
                 player.health = player.health - totalDamage;
-                alert("Enemy hit " + Math.round(enemyAttackValues[0]) + " damage " + enemyAttackValues[1] + " times.");
+                getEnemyDamage.innerHTML = 'Enemy hit ' + Math.round(enemyAttackValues[0]) + ' damage ' + enemyAttackValues[1] + ' times, totalling ' + Math.round(enemyAttackValues[0] * enemyAttackValues[1]);
                 if (player.health <= 0) {
                     alert("You lose! Refresh browser to play again");
                     getPlayerHealth.innerHTML = 'Health: 0';
@@ -153,7 +159,7 @@ let PlayerMoves = {
             let enemyAttackValues = enemyAttack();
             let totalDamage = Math.round(enemyAttackValues[0]) * enemyAttackValues[1];
             player.health = player.health - totalDamage;
-            alert("Enemy hit " + Math.round(enemyAttackValues[0]) + " damage " + enemyAttackValues[1] + " times.");
+            getEnemyDamage.innerHTML = 'Enemy hit ' + Math.round(enemyAttackValues[0]) + ' damage ' + enemyAttackValues[1] + ' times, totalling ' + Math.round(enemyAttackValues[0] * enemyAttackValues[1]);
             if (player.health <= 0) {
                 alert("You lose! Refresh browser to play again.");
                 getEnemyHealth.innerHTML = 'Health: ' + Math.round(enemy.health);
@@ -164,7 +170,7 @@ let PlayerMoves = {
                 let playerAttackValues = playerAttack();
                 let totalDamage = Math.round(playerAttackValues[0]) * playerAttackValues[1];
                 enemy.health = enemy.health - totalDamage;
-                alert("You hit " + Math.round(playerAttackValues[0]) + " damage " + playerAttackValues[1] + " times.");
+                getPlayerDamage.innerHTML = 'You hit ' + Math.round(playerAttackValues[0]) + ' damage ' + playerAttackValues[1] + ' times, totalling ' + Math.round(playerAttackValues[0] * playerAttackValues[1]);
                 if (enemy.health <= 0) {
                     nextEnemy();
                     getEnemyHealth.innerHTML = 'Health: 0';
@@ -201,14 +207,17 @@ let PlayerMoves = {
             let attackValues = [calcOutputDamage, numberOfHits];
             return attackValues;            
         }
-        // Get Player/Enemy health to change later
+        // Get Player/Enemy health and damage to change later
         let getPlayerHealth = document.querySelector(".health-player");
         let getEnemyHealth = document.querySelector(".health-enemy");
+        let getArena = document.querySelector(".arena");
+        let getPlayerDamage = document.querySelector(".player-damage");
+        let getEnemyDamage = document.querySelector(".enemy-damage");
 
         // Initiate attacks
         if (getPlayerSpeed >= getEnemySpeed) {
             playerHeal();
-            alert("You healed for " + 250 + ".");
+            getPlayerDamage.innerHTML = 'You healed for 250';
             if (enemy.health <= 0) {
                 nextEnemy();
                 getPlayerHealth.innerHTML = 'Health: ' + Math.round(player.health);
@@ -219,7 +228,7 @@ let PlayerMoves = {
                 let enemyAttackValues = enemyAttack();
                 let totalDamage = Math.round(enemyAttackValues[0]) * enemyAttackValues[1];
                 player.health = player.health - totalDamage;
-                alert("Enemy hit " + Math.round(enemyAttackValues[0]) + " damage " + enemyAttackValues[1] + " times.");
+                getEnemyDamage.innerHTML = 'Enemy hit ' + Math.round(enemyAttackValues[0]) + ' damage ' + enemyAttackValues[1] + ' times, totalling ' + Math.round(enemyAttackValues[0] * enemyAttackValues[1]);
                 if (player.health <= 0) {
                     alert("You lose! Refresh browser to play again");
                     getPlayerHealth.innerHTML = 'Health: 0';
@@ -233,7 +242,7 @@ let PlayerMoves = {
             let enemyAttackValues = enemyAttack();
             let totalDamage = Math.round(enemyAttackValues[0]) * enemyAttackValues[1];
             player.health = player.health - totalDamage;
-            alert("Enemy hit " + Math.round(enemyAttackValues[0]) + " damage " + enemyAttackValues[1] + " times.");
+            getEnemyDamage.innerHTML = 'Enemy hit ' + Math.round(enemyAttackValues[0]) + ' damage ' + enemyAttackValues[1] + ' times, totalling ' + Math.round(enemyAttackValues[0] * enemyAttackValues[1]);
             if (player.health <= 0) {
                 alert("You lose! Refresh browser to play again.");
                 getEnemyHealth.innerHTML = 'Health: ' + Math.round(enemy.health);
@@ -242,7 +251,7 @@ let PlayerMoves = {
                 getPlayerHealth.innerHTML = 'Health: ' + Math.round(player.health);
                 // Player attacks
                 playerHeal();
-                alert("You healed for " + 250 + ".");
+                getPlayerDamage.innerHTML = 'You healed for 250';
                 if (enemy.health <= 0) {
                     nextEnemy();
                     getEnemyHealth.innerHTML = 'Health: 0';
