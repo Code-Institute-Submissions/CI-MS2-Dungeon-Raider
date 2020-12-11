@@ -10,40 +10,41 @@
 <body>
 <div class="container-fluid pl-0 pr-0">
     <div class="game-container">
-    <div class="header">
-        <h1>Dungeon Raider</h1>
-        <h3><em>Storm the castle, defeat the enemies, claim the treasure!</em></h3>
-        <img src="assets/images/castle.png" alt="Castle" id="castle-image">
-        <button class="how-to-play">How to Play</button>
-        <p>Choose your hero : </p>
-    </div>
+<!-- ================================================HEADER CONTAINER================================================-->
+        <div class="header">
+            <h1>Dungeon Raider</h1>
+            <h3><em>Storm the castle, defeat the enemies, claim the treasure!</em></h3>
+            <img src="assets/images/castle.png" alt="Castle" id="castle-image">
+            <button class="how-to-play">How to Play</button>
+            <p>Choose your hero : </p>
+        </div>
+<!-- ================================================COUNTER CONTAINER================================================-->
+        <div class="counter">
+            <p class="enemy-counter">Enemies Defeated: 0</p>
+        </div>
+<!-- ================================================INTERFACE CONTAINER================================================-->
+        <div class="interface">
+            <a href="#" onclick="GameManager.setGameStart('Arthur')">
+                <img src="assets/images/arthur.png" alt="Hero" class="img-avatar">
+                <div>
+                    <h3>Arthur</h3>
+                    <p>Protector of the realm and all-round good guy!</p>
+                </div>
+            </a>
+        </div>
+<!-- ================================================ACTIONS CONTAINER================================================-->
+        <div class="actions">
 
-    <div class="counter">
-        <p class="enemy-counter">Enemies Defeated: 0</p>
-    </div>
+        </div>
+<!-- ================================================ARENA CONTAINER================================================-->
+        <div class="arena">
+            <div class="player-damage"></div>
+            <div class="enemy-damage"></div>
+        </div>
+<!-- ================================================ENEMY CONTAINER================================================-->
+        <div class="enemy">
 
-    <div class="interface">
-        <a href="#" onclick="GameManager.setGameStart('Arthur')">
-            <img src="assets/images/arthur.png" alt="Hero" class="img-avatar">
-            <div>
-                <h3>Arthur</h3>
-                <p>Protector of the realm and all-round good guy!</p>
-            </div>
-        </a>
-    </div>
-
-    <div class="actions">
-
-    </div>
-
-    <div class="arena">
-        <div class="player-damage"></div>
-        <div class="enemy-damage"></div>
-    </div>
-
-    <div class="enemy">
-
-    </div>
+        </div>
     </div>
 </div>
 <!-- ================================================SCRIPTS================================================-->
