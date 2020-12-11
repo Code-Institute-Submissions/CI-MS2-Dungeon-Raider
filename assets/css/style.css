@@ -10,7 +10,7 @@ body {
 /*--------------------------------------------HEADERS/TEXT*/
 .header p {
     font-size: 1.4rem;
-    padding: 2rem;
+    padding: 1rem;
     margin: 0;
     text-decoration: underline;
 }
@@ -31,7 +31,7 @@ body {
     font-size: 1.5rem;
 }
 h1 {
-    padding: 2rem;
+    padding: 1rem;
     text-decoration: underline;
     font-size: 3rem;
 }
@@ -98,4 +98,14 @@ a {
     border: 2px solid #fff;
     display: inline-block;
     margin: 2rem auto;
+}
+.how-to-play {
+    display: block;
+    margin: .5rem auto;
+    padding: 1rem;
+    font-size: 1.6rem;
+    background-color: #119b2e;
+    border-color: #119b2e;
+    font-weight: bold;
+    color: #fff;
 }
