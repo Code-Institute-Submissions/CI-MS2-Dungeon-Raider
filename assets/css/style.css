@@ -109,6 +109,24 @@ a {
     font-weight: bold;
     color: #fff;
 }
+.btn-secondary {
+    background-color: #B22222;
+    border-color: #B22222;
+}
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:focus,
+.btn-secondary:active:focus {
+    background-color: #de5454;
+    border-color: #de5454;
+}
+.how-to-play:hover,
+.how-to-play:active,
+.how-to-play:focus,
+.how-to-play:active:focus {
+    background-color: #14b838;
+    border-color: #14b838; 
+}
 /*--------------------------------------------MODAL*/
 .modal-title {
     color: #000;
