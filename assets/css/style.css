@@ -128,7 +128,7 @@ a {
     border-color: #14b838; 
 }
 /*--------------------------------------------MODAL*/
-.modal-title {
+.modal-title strong {
     color: #000;
     font-size: 1.6rem;
     text-transform: uppercase;
