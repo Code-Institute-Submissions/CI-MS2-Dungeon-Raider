@@ -191,5 +191,8 @@ a {
     text-align: center;
 }
 #error-image {
-    margin: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
