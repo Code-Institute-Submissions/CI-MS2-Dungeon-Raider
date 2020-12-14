@@ -131,7 +131,7 @@ a {
     font-size: 1.6rem;
     font-weight: bold;
 }
-/*--------------------------------------------MODAL*/
+/*--------------------------------------------HOW TO PLAY MODAL*/
 .modal-title strong {
     color: #000;
     font-size: 1.6rem;
@@ -153,6 +153,7 @@ a {
     background-color: #000;
     color: #fff;
 }
+/*--------------------------------------------WIN MODAL*/
 .win-modal-body p {
     color: #fff;
     font-size: 1.6rem;
@@ -162,4 +163,7 @@ a {
 }
 .win-modal-container {
     margin: auto;
+}
+.win-modal-body h3 {
+    font-size: 4rem;
 }
