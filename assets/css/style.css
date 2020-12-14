@@ -160,6 +160,7 @@ a {
 }
 .win-modal-body h3 {
     font-size: 4rem;
+    text-transform: uppercase;
 }
 .win-modal-body {
     background-color: #303030;
@@ -177,6 +178,7 @@ a {
 }
 .lose-modal-body h3 {
     font-size: 4rem;
+    text-transform: uppercase;
 }
 .lose-modal-body {
     background-color: #303030;
