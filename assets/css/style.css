@@ -181,3 +181,7 @@ a {
 .lose-modal-body {
     background-color: #303030;
 }
+/*--------------------------------------------404*/
+.error {
+    font-size: 1.4rem;
+}
