@@ -127,6 +127,10 @@ a {
     background-color: #14b838;
     border-color: #14b838; 
 }
+#restart-game-button {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
 /*--------------------------------------------MODAL*/
 .modal-title strong {
     color: #000;
@@ -144,4 +148,18 @@ a {
 }
 .modal-subheading {
     text-decoration: underline;
+}
+.modal-content {
+    background-color: #000;
+    color: #fff;
+}
+.win-modal-body p {
+    color: #fff;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+}
+.win-modal-container {
+    margin: auto;
 }

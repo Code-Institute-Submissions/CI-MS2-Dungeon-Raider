@@ -49,7 +49,7 @@ function nextEnemy() {
     getEnemy.innerHTML = '<img src="assets/images/' + enemy.enemyType.toLowerCase() + '.png" alt="' + enemy.enemyType + '"class="img-avatar"><div><h3>' + enemy.enemyType + '</h3><p class="health-enemy">Health: ' + enemy.health + '</p><p>Strength: ' + enemy.strength + '</p><p>Agility: ' + enemy.agility + '</p><p>Speed: ' + enemy.speed + '</p></div>';
 
     if (enemyDefeated === 4) {
-        alert("You win! Claim your treasure!");
+        $('#winModal').modal('show');
     }
 }
 

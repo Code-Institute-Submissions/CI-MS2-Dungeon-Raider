@@ -26,7 +26,7 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel"><strong>How to play :</strong></h5>
+                            <h5 class="modal-title" id="how-to-play-modal-title"><strong>How to play :</strong></h5>
                         </div>
                         <div class="modal-body">
                          <p>Dungeon Raider is a turn based combat game that has an element of luck involved. Each time someone attacks, the amount of damage and hits vary.</p>
@@ -79,6 +79,20 @@
         <div class="enemy">
 
         </div>
+<!-- ================================================WIN MODAL================================================-->
+        <div class="win-modal-container">
+            <div class="modal fade" id="winModal" tabindex="-1" role="dialog" aria-labelledby="winModal" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="win-modal-body">
+                            <p>You have defeated all the enemies! Claim your treasure!</p>
+                            <img src="assets/images/treasure.png" alt="Treasure" class="img-fluid">
+                        </div>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal" id="restart-game-button">Restart Game</button>
+                    </div>
+                </div>
+            </div>
+        </div>  
     </div>
 </div>
 <!-- ================================================SCRIPTS================================================-->
