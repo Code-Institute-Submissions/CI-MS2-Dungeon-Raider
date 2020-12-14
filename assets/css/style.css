@@ -112,6 +112,8 @@ a {
 .btn-secondary {
     background-color: #B22222;
     border-color: #B22222;
+    font-size: 1.6rem;
+    font-weight: bold;
 }
 .btn-secondary:hover,
 .btn-secondary:active,
@@ -126,10 +128,6 @@ a {
 .how-to-play:active:focus {
     background-color: #14b838;
     border-color: #14b838; 
-}
-#restart-game-button {
-    font-size: 1.6rem;
-    font-weight: bold;
 }
 /*--------------------------------------------HOW TO PLAY MODAL*/
 .modal-title strong {
@@ -149,10 +147,6 @@ a {
 .modal-subheading {
     text-decoration: underline;
 }
-.modal-content {
-    background-color: #000;
-    color: #fff;
-}
 /*--------------------------------------------WIN MODAL*/
 .win-modal-body p {
     color: #fff;
@@ -166,4 +160,24 @@ a {
 }
 .win-modal-body h3 {
     font-size: 4rem;
+}
+.win-modal-body {
+    background-color: #303030;
+}
+/*--------------------------------------------LOSE MODAL*/
+.lose-modal-body p {
+    color: #fff;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+}
+.lose-modal-container {
+    margin: auto;
+}
+.lose-modal-body h3 {
+    font-size: 4rem;
+}
+.lose-modal-body {
+    background-color: #303030;
 }
