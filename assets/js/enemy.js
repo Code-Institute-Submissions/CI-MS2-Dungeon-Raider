@@ -10,7 +10,6 @@ function Enemy(enemyType, health, strength, agility, speed) {
 }
 // Generate new random enemy
 function nextEnemy() {
-    let getHeader = document.querySelector(".header");
     let getActions = document.querySelector(".actions");
     let getCounter = document.querySelector(".counter");
     let getEnemy = document.querySelector(".enemy");

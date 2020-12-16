@@ -40,7 +40,6 @@ let PlayerMoves = {
         // Get Player/Enemy health and damage to change later
         let getPlayerHealth = document.querySelector(".health-player");
         let getEnemyHealth = document.querySelector(".health-enemy");
-        let getArena = document.querySelector(".arena");
         let getPlayerDamage = document.querySelector(".player-damage");
         let getEnemyDamage = document.querySelector(".enemy-damage");
         // Initiate attacks
@@ -126,7 +125,6 @@ let PlayerMoves = {
         // Get Player/Enemy health and damage to change later
         let getPlayerHealth = document.querySelector(".health-player");
         let getEnemyHealth = document.querySelector(".health-enemy");
-        let getArena = document.querySelector(".arena");
         let getPlayerDamage = document.querySelector(".player-damage");
         let getEnemyDamage = document.querySelector(".enemy-damage");
         // Initiate attacks
@@ -210,7 +208,6 @@ let PlayerMoves = {
         // Get Player/Enemy health and damage to change later
         let getPlayerHealth = document.querySelector(".health-player");
         let getEnemyHealth = document.querySelector(".health-enemy");
-        let getArena = document.querySelector(".arena");
         let getPlayerDamage = document.querySelector(".player-damage");
         let getEnemyDamage = document.querySelector(".enemy-damage");
 

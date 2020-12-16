@@ -24,7 +24,6 @@ let GameManager = {
         getArena.style.visibility = "visible";
     },
     setFight: function() {
-        let getHeader = document.querySelector(".header");
         let getActions = document.querySelector(".actions");
         let getCounter = document.querySelector(".counter");
         let getEnemy = document.querySelector(".enemy");
