@@ -15,12 +15,12 @@ function nextEnemy() {
     let getCounter = document.querySelector(".counter");
     let getEnemy = document.querySelector(".enemy");
 
-    let enemy00 = new Enemy("Goblin", 250, 75, 175, 175);
+    let enemy00 = new Enemy("Goblin", 250, 75, 175, 150);
     let enemy01 = new Enemy("Troll", 300, 150, 125, 125);
     let enemy02 = new Enemy("Golem", 500, 300, 100, 75);
     let enemy03 = new Enemy("Giant", 500, 300, 100, 75);
     let enemy04 = new Enemy("Orc", 400, 175, 125, 125);
-    let enemy05 = new Enemy("Dragon", 550, 325, 100, 100);
+    let enemy05 = new Enemy("Dragon", 550, 350, 100, 100);
 
     let chooseRandomEnemy = Math.floor(Math.random() * Math.floor(6));
     switch (chooseRandomEnemy) {
