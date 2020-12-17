@@ -40,21 +40,27 @@ let GameManager = {
         switch (chooseRandomEnemy) {
             case 0:
                 enemy = enemy00;
+                goblinAudio.play();
                 break;
             case 1:
                 enemy = enemy01;
+                trollAudio.play();
                 break;                
             case 2:
                 enemy = enemy02;
+                golemAudio.play();
                 break;
             case 3:
                 enemy = enemy03;
+                giantAudio.play();
                 break;
             case 4:
                 enemy = enemy04;
+                orcAudio.play();
                 break;
             case 5:
                 enemy = enemy05;
+                dragonAudio.play();
                 break;                                                
         }
         getCounter.style.visibility = "visible";

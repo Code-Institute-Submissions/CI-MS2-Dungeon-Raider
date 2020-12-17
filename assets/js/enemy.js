@@ -2,6 +2,14 @@
 let enemy;
 // Used for Enemies Defeated counter
 let enemyDefeated = 1;
+// Enemy audio sounds when they are generated
+let goblinAudio = new Audio('assets/audio/goblin-audio.mp3');
+let trollAudio = new Audio('assets/audio/troll-audio.mp3');
+let golemAudio = new Audio('assets/audio/golem-audio.mp3');
+let giantAudio = new Audio('assets/audio/giant-audio.mp3');
+let orcAudio = new Audio('assets/audio/orc-audio.mp3');
+let dragonAudio = new Audio('assets/audio/dragon-audio.mp3');
+
 // Enemy constructor
 function Enemy(enemyType, health, strength, agility, speed) {
     this.enemyType = enemyType;
@@ -27,21 +35,27 @@ function nextEnemy() {
     switch (chooseRandomEnemy) {
         case 0:
             enemy = enemy00;
+            goblinAudio.play();
             break;
         case 1:
             enemy = enemy01;
+            trollAudio.play();
             break;                
         case 2:
             enemy = enemy02;
+            golemAudio.play();
             break;
         case 3:
             enemy = enemy03;
+            giantAudio.play();
             break;
         case 4:
             enemy = enemy04;
+            orcAudio.play();
             break;
         case 5:
             enemy = enemy05;
+            dragonAudio.play();
             break;                                                
         }
     getCounter.style.visibility = "visible";
@@ -51,6 +65,7 @@ function nextEnemy() {
     // Checks to see if the player has won the game and activate win modal
     if (enemyDefeated === 4) {
         $('#winModal').modal('show');
+        Audio.stop();
     }
 }
 
