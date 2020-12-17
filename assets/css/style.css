@@ -4,7 +4,7 @@
     font-size: 10px;
 }
 body {
-    color: #fff;
+    color: #FFF;
     background-color: #000;
 }
 /*--------------------------------------------HEADERS/TEXT*/
@@ -42,10 +42,10 @@ h1 {
     font-size: 1.6rem;
 }
 a:hover {
-    color: #fff;
+    color: #FFF;
 }
 a {
-    color: #fff;
+    color: #FFF;
 }
 .enemy-counter p {
     font-size: 1.6rem;
@@ -69,8 +69,8 @@ a {
     width: 100%;
     margin: 1rem auto;
     font-size: 1.4rem;
-    border-top: 2px solid #fff;
-    border-bottom: 2px solid #fff;
+    border-top: 2px solid #FFF;
+    border-bottom: 2px solid #FFF;
     background-color: #303030;
 }
 /*--------------------------------------------IMAGES*/
@@ -93,9 +93,9 @@ a {
     width: 30%;
     font-size: 1.4rem;
     text-align: center;
-    color: #fff;
+    color: #FFF;
     padding: .5rem;
-    border: 2px solid #fff;
+    border: 2px solid #FFF;
     display: inline-block;
     margin: 2rem auto;
 }
@@ -104,10 +104,10 @@ a {
     margin: .5rem auto;
     padding: 1rem;
     font-size: 1.6rem;
-    background-color: #119b2e;
-    border-color: #119b2e;
+    background-color: #119B2E;
+    border-color: #119B2E;
     font-weight: bold;
-    color: #fff;
+    color: #FFF;
 }
 .btn-secondary {
     background-color: #B22222;
@@ -119,15 +119,15 @@ a {
 .btn-secondary:active,
 .btn-secondary:focus,
 .btn-secondary:active:focus {
-    background-color: #de5454;
-    border-color: #de5454;
+    background-color: #DE5454;
+    border-color: #DE5454;
 }
 .how-to-play:hover,
 .how-to-play:active,
 .how-to-play:focus,
 .how-to-play:active:focus {
-    background-color: #14b838;
-    border-color: #14b838; 
+    background-color: #14B838;
+    border-color: #14B838; 
 }
 /*--------------------------------------------HOW TO PLAY MODAL*/
 .modal-title strong {
@@ -149,7 +149,7 @@ a {
 }
 /*--------------------------------------------WIN MODAL*/
 .win-modal-body p {
-    color: #fff;
+    color: #FFF;
     font-size: 1.6rem;
     text-align: center;
     padding: 1rem;
@@ -167,7 +167,7 @@ a {
 }
 /*--------------------------------------------LOSE MODAL*/
 .lose-modal-body p {
-    color: #fff;
+    color: #FFF;
     font-size: 1.6rem;
     text-align: center;
     padding: 1rem;
