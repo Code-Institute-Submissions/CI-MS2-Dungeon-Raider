@@ -345,15 +345,28 @@ The W3C Markup Validator, W3C CSS Validator and JSHint services were used to val
 ##### GitHub Pages
 
 1. The project was deployed to GitHub Pages using the following steps:
+
 2. A local project was created in GitHub with a new repository called 'CI-MS1-Hair-by-Jo'
+
 3. The project had regular push and detailed commits which were pushed to the GitHub website before deployment
+
 4. The project was deployed by logging in to GitHub and locating the [GitHub Repository](https://github.com/scottsimpson91/CI-MS1-Hair-by-Jo)
+
 5. At the top of the Repository (not top of page), locate the "Settings" Button on the menu and click
+
 6. Scroll down the Settings page until the "GitHub Pages" Section was found
+
 7. Under "Source", click the dropdown called "None" and select "Master Branch"
+
 8. The page will automatically refresh
+
 9. Scroll back down through the page to locate the now published site [link](https://scottsimpson91.github.io/CI-MS1-Hair-by-Jo/) in the "GitHub Pages" section
-10. The code can be run locally through clone or download, you can do this by opening the [repository](https://github.com/scottsimpson91/CI-MS1-Hair-by-Jo), clicking on the code button and then selecting either 'clone' or 'download'
+
+10. The code can be run locally through clone or download, you can do this by opening the [repository](https://github.com/scottsimpson91/CI-MS1-Hair-by-Jo), clicking on the code button and then selecting either 'clone' or 'download' 
+
+11. Please choose the below instructions which apply to you:
+
+    
 
 ##### Download
 
