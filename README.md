@@ -434,13 +434,14 @@ The W3C Markup Validator, W3C CSS Validator and JSHint services were used to val
 * **[Stack Overflow](https://stackoverflow.com/)**
 
   * Guidance on how to add a restart game button to the page - [Here](https://stackoverflow.com/questions/29884654/button-that-refreshes-the-page-on-click)
+
   * Guidance on how to trigger a modal if a condition statement is met - [Here](https://stackoverflow.com/questions/28554238/trigger-bootstrap-modal-if-a-condition-statement-is-not-met)
 
-  
+    
 
-  ##### Content
+* **Content**
 
-  All other text content was written by the developer
+  * All other text content was written by the developer
 
 
 
@@ -455,9 +456,5 @@ I would like to thank the following:
   
 
 ## <a name="support">Support</a>
-
-For any issues or information, please email me on scottsimpson7@googlemail.com
-
-
 
 Thanks for taking the time to view my README. I hope you enjoyed your visit to my page.
