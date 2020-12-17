@@ -1,3 +1,4 @@
+// Base code written by following a YouTube tutorial by Dani Krossing and adapted to own project
 let GameManager = {
     setGameStart: function(classType) {
         this.resetPlayer(classType);
