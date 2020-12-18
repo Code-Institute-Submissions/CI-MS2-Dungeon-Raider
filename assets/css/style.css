@@ -42,6 +42,7 @@ h1 {
 }
 .header h3 em {
     font-size: 1.6rem;
+    padding: 1rem;
 }
 a:hover {
     color: #FFF;
