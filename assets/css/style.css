@@ -18,11 +18,11 @@ body {
 }
 .interface p {
     font-size: 1.4rem;
-    line-height: 1.2rem;
+    height: 1.6rem;
 }
 .enemy p {
     font-size: 1.4rem;
-    line-height: 1.5rem;
+    height: 1.6rem;
 }
 .interface h3 {
     text-decoration: underline;
@@ -39,6 +39,7 @@ h1 {
 }
 .counter p {
     font-size: 1.6rem;
+    margin-bottom: .5rem;
 }
 .header h3 em {
     font-size: 1.6rem;
@@ -100,7 +101,7 @@ a {
     padding: .5rem;
     border: 2px solid #FFF;
     display: inline-block;
-    margin: 1rem auto;
+    margin: .5rem auto;
 }
 .how-to-play {
     display: block;
