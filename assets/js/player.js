@@ -53,6 +53,7 @@ let PlayerMoves = {
             if (enemy.health <= 0) {
                 if (enemyDefeated === 3) {
                     $('#winModal').modal('show')
+                    winAudio.play();
                     getCounter.innerHTML = '<p>Enemies Defeated: ' + enemyDefeated++ + '</p>';
                 } else {
                     nextEnemy();
@@ -69,6 +70,7 @@ let PlayerMoves = {
                 getEnemyDamage.innerHTML = 'Enemy hit ' + Math.round(enemyAttackValues[0]) + ' damage ' + enemyAttackValues[1] + ' times, totalling ' + Math.round(enemyAttackValues[0] * enemyAttackValues[1]);
                 if (player.health <= 0) {
                     $('#loseModal').modal('show');
+                    loseAudio.play();
                     getPlayerHealth.innerHTML = 'Health: 0';
                     getEnemyHealth.innerHTML = 'Health: ' + Math.round(enemy.health);
                 } else {
@@ -83,6 +85,7 @@ let PlayerMoves = {
             getEnemyDamage.innerHTML = 'Enemy hit ' + Math.round(enemyAttackValues[0]) + ' damage ' + enemyAttackValues[1] + ' times, totalling ' + Math.round(enemyAttackValues[0] * enemyAttackValues[1]);
             if (player.health <= 0) {
                 $('#loseModal').modal('show');
+                loseAudio.play();
                 getEnemyHealth.innerHTML = 'Health: ' + Math.round(enemy.health);
                 getPlayerHealth.innerHTML = 'Health: 0';
             } else {
@@ -95,6 +98,7 @@ let PlayerMoves = {
                 if (enemy.health <= 0) {
                     if (enemyDefeated === 3) {
                         $('#winModal').modal('show')
+                        winAudio.play();
                         getCounter.innerHTML = '<p>Enemies Defeated: ' + enemyDefeated++ + '</p>';
                     } else {
                         nextEnemy();
@@ -150,6 +154,7 @@ let PlayerMoves = {
             if (enemy.health <= 0) {
                 if (enemyDefeated === 3) {
                     $('#winModal').modal('show')
+                    winAudio.play();
                     getCounter.innerHTML = '<p>Enemies Defeated: ' + enemyDefeated++ + '</p>';
                 } else {
                     nextEnemy();
@@ -166,6 +171,7 @@ let PlayerMoves = {
                 getEnemyDamage.innerHTML = 'Enemy hit ' + Math.round(enemyAttackValues[0]) + ' damage ' + enemyAttackValues[1] + ' times, totalling ' + Math.round(enemyAttackValues[0] * enemyAttackValues[1]);
                 if (player.health <= 0) {
                     $('#loseModal').modal('show');
+                    loseAudio.play();
                     getPlayerHealth.innerHTML = 'Health: 0';
                     getEnemyHealth.innerHTML = 'Health: ' + Math.round(enemy.health);
                 } else {
@@ -180,6 +186,7 @@ let PlayerMoves = {
             getEnemyDamage.innerHTML = 'Enemy hit ' + Math.round(enemyAttackValues[0]) + ' damage ' + enemyAttackValues[1] + ' times, totalling ' + Math.round(enemyAttackValues[0] * enemyAttackValues[1]);
             if (player.health <= 0) {
                 $('#loseModal').modal('show');
+                loseAudio.play();
                 getEnemyHealth.innerHTML = 'Health: ' + Math.round(enemy.health);
                 getPlayerHealth.innerHTML = 'Health: 0';
             } else {
@@ -192,6 +199,7 @@ let PlayerMoves = {
                 if (enemy.health <= 0) {
                     if (enemyDefeated === 3) {
                         $('#winModal').modal('show')
+                        winAudio.play();
                         getCounter.innerHTML = '<p>Enemies Defeated: ' + enemyDefeated++ + '</p>';
                     } else {
                         nextEnemy();
@@ -245,6 +253,7 @@ let PlayerMoves = {
             if (enemy.health <= 0) {
                 if (enemyDefeated === 3) {
                     $('#winModal').modal('show')
+                    winAudio.play();
                     getCounter.innerHTML = '<p>Enemies Defeated: ' + enemyDefeated++ + '</p>';
                 } else {
                     nextEnemy();
@@ -261,6 +270,7 @@ let PlayerMoves = {
                 getEnemyDamage.innerHTML = 'Enemy hit ' + Math.round(enemyAttackValues[0]) + ' damage ' + enemyAttackValues[1] + ' times, totalling ' + Math.round(enemyAttackValues[0] * enemyAttackValues[1]);
                 if (player.health <= 0) {
                     $('#loseModal').modal('show');
+                    loseAudio.play();
                     getPlayerHealth.innerHTML = 'Health: 0';
                     getEnemyHealth.innerHTML = 'Health: ' + Math.round(enemy.health);
                 } else {
@@ -275,6 +285,7 @@ let PlayerMoves = {
             getEnemyDamage.innerHTML = 'Enemy hit ' + Math.round(enemyAttackValues[0]) + ' damage ' + enemyAttackValues[1] + ' times, totalling ' + Math.round(enemyAttackValues[0] * enemyAttackValues[1]);
             if (player.health <= 0) {
                 $('#loseModal').modal('show');
+                loseAudio.play();
                 getEnemyHealth.innerHTML = 'Health: ' + Math.round(enemy.health);
                 getPlayerHealth.innerHTML = 'Health: 0';
             } else {
@@ -285,6 +296,7 @@ let PlayerMoves = {
                 if (enemy.health <= 0) {
                     if (enemyDefeated === 3) {
                         $('#winModal').modal('show')
+                        winAudio.play();
                         getCounter.innerHTML = '<p>Enemies Defeated: ' + enemyDefeated++ + '</p>';
                     } else {
                         nextEnemy();

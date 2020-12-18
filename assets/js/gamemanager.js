@@ -1,4 +1,7 @@
 // Base code written by following a YouTube tutorial by Dani Krossing and adapted to own project
+let winAudio = new Audio('assets/audio/win-audio.mp3');
+let loseAudio = new Audio('assets/audio/lose-audio.mp3');
+
 let GameManager = {
     setGameStart: function(classType) {
         this.resetPlayer(classType);
