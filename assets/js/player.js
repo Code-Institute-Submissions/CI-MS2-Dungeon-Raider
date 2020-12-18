@@ -26,7 +26,7 @@ let PlayerMoves = {
             let numberOfHits = Math.floor(Math.random() * Math.floor(player.agility / 10) /2) + 1;
             let attackValues = [calcOutputDamage, numberOfHits];
             return attackValues;
-        }
+        };
         // Enemy attacks
         let enemyAttack = function() {
             let calcBaseDamage;
@@ -37,7 +37,7 @@ let PlayerMoves = {
             let numberOfHits = Math.floor(Math.random() * Math.floor(enemy.agility / 10) /2) + 1;
             let attackValues = [calcOutputDamage, numberOfHits];
             return attackValues;            
-        }
+        };
         // Get Player/Enemy health and damage to change later
         let getPlayerHealth = document.querySelector(".health-player");
         let getEnemyHealth = document.querySelector(".health-enemy");
@@ -127,7 +127,7 @@ let PlayerMoves = {
             let numberOfHits = Math.floor(Math.random() * Math.floor(player.agility / 10) /2) + 1;
             let attackValues = [calcOutputDamage, numberOfHits];
             return attackValues;
-        }
+        };
         // Enemy attacks
         let enemyAttack = function() {
             let calcBaseDamage;
@@ -138,7 +138,7 @@ let PlayerMoves = {
             let numberOfHits = Math.floor(Math.random() * Math.floor(enemy.agility / 10) /2) + 1;
             let attackValues = [calcOutputDamage, numberOfHits];
             return attackValues;           
-        }
+        };
         // Get Player/Enemy health and damage to change later
         let getPlayerHealth = document.querySelector(".health-player");
         let getEnemyHealth = document.querySelector(".health-enemy");
@@ -226,7 +226,7 @@ let PlayerMoves = {
             } else {
                 player.health = 500;
             }
-        }
+        };
 
         // Enemy attacks
         let enemyAttack = function() {
@@ -238,7 +238,7 @@ let PlayerMoves = {
             let numberOfHits = Math.floor(Math.random() * Math.floor(enemy.agility / 10) /2) + 1;
             let attackValues = [calcOutputDamage, numberOfHits];
             return attackValues;            
-        }
+        };
         // Get Player/Enemy health and damage to change later
         let getPlayerHealth = document.querySelector(".health-player");
         let getEnemyHealth = document.querySelector(".health-enemy");
@@ -311,4 +311,4 @@ let PlayerMoves = {
             }
         }         
     }
-}
+};
