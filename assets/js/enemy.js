@@ -62,5 +62,5 @@ function nextEnemy() {
     getActions.innerHTML = ' <a href="#" class="btn-prefight" onclick="PlayerMoves.calcAttack()"><img src="assets/images/attack.png" class="player-move-images"></img>Attack</a> ' + ' <a href="#" class="btn-prefight" onclick="PlayerMoves.calcCounter()"><img src="assets/images/counter.png" class="player-move-images"></img>Counter</a> ' + ' <a href="#" class="btn-prefight" onclick="PlayerMoves.calcHeal()"><img src="assets/images/heal.png" class="player-move-images"></img>Heal</a>';
     getEnemy.innerHTML = '<img src="assets/images/' + enemy.enemyType.toLowerCase() + '.png" alt="' + enemy.enemyType + '"class="img-avatar"><div><h3>' + enemy.enemyType + '</h3><p class="health-enemy">Health: ' + enemy.health + '</p><p>Strength: ' + enemy.strength + '</p><p>Agility: ' + enemy.agility + '</p><p>Speed: ' + enemy.speed + '</p></div>';
     // Checks to see if the player has won the game and activate win modal
-}
+};
 
