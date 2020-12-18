@@ -52,7 +52,7 @@ let PlayerMoves = {
             getPlayerDamage.innerHTML = 'You hit ' + Math.round(playerAttackValues[0]) + ' damage ' + playerAttackValues[1] + ' times, totalling ' + Math.round(playerAttackValues[0] * playerAttackValues[1]);
             if (enemy.health <= 0) {
                 if (enemyDefeated === 3) {
-                    $('#winModal').modal('show')
+                    $('#winModal').modal('show');
                     winAudio.play();
                     getCounter.innerHTML = '<p>Enemies Defeated: ' + enemyDefeated++ + '</p>';
                 } else {
@@ -97,7 +97,7 @@ let PlayerMoves = {
                 getPlayerDamage.innerHTML = 'You hit ' + Math.round(playerAttackValues[0]) + ' damage ' + playerAttackValues[1] + ' times, totalling ' + Math.round(playerAttackValues[0] * playerAttackValues[1]);
                 if (enemy.health <= 0) {
                     if (enemyDefeated === 3) {
-                        $('#winModal').modal('show')
+                        $('#winModal').modal('show');
                         winAudio.play();
                         getCounter.innerHTML = '<p>Enemies Defeated: ' + enemyDefeated++ + '</p>';
                     } else {
@@ -153,7 +153,7 @@ let PlayerMoves = {
             getPlayerDamage.innerHTML = 'You hit ' + Math.round(playerAttackValues[0]) + ' damage ' + playerAttackValues[1] + ' times, totalling ' + Math.round(playerAttackValues[0] * playerAttackValues[1]);
             if (enemy.health <= 0) {
                 if (enemyDefeated === 3) {
-                    $('#winModal').modal('show')
+                    $('#winModal').modal('show');
                     winAudio.play();
                     getCounter.innerHTML = '<p>Enemies Defeated: ' + enemyDefeated++ + '</p>';
                 } else {
@@ -198,7 +198,7 @@ let PlayerMoves = {
                 getPlayerDamage.innerHTML = 'You hit ' + Math.round(playerAttackValues[0]) + ' damage ' + playerAttackValues[1] + ' times, totalling ' + Math.round(playerAttackValues[0] * playerAttackValues[1]);
                 if (enemy.health <= 0) {
                     if (enemyDefeated === 3) {
-                        $('#winModal').modal('show')
+                        $('#winModal').modal('show');
                         winAudio.play();
                         getCounter.innerHTML = '<p>Enemies Defeated: ' + enemyDefeated++ + '</p>';
                     } else {
@@ -252,7 +252,7 @@ let PlayerMoves = {
             getPlayerDamage.innerHTML = 'You healed for 250';
             if (enemy.health <= 0) {
                 if (enemyDefeated === 3) {
-                    $('#winModal').modal('show')
+                    $('#winModal').modal('show');
                     winAudio.play();
                     getCounter.innerHTML = '<p>Enemies Defeated: ' + enemyDefeated++ + '</p>';
                 } else {
@@ -295,7 +295,7 @@ let PlayerMoves = {
                 getPlayerDamage.innerHTML = 'You healed for 250';
                 if (enemy.health <= 0) {
                     if (enemyDefeated === 3) {
-                        $('#winModal').modal('show')
+                        $('#winModal').modal('show');
                         winAudio.play();
                         getCounter.innerHTML = '<p>Enemies Defeated: ' + enemyDefeated++ + '</p>';
                     } else {
