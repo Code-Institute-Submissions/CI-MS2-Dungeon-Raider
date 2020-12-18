@@ -43,6 +43,7 @@ let PlayerMoves = {
         let getEnemyHealth = document.querySelector(".health-enemy");
         let getPlayerDamage = document.querySelector(".player-damage");
         let getEnemyDamage = document.querySelector(".enemy-damage");
+        let getCounter = document.querySelector(".enemy-counter");
         // Initiate attacks
         if (getPlayerSpeed >= getEnemySpeed) {
             let playerAttackValues = playerAttack();
@@ -50,9 +51,15 @@ let PlayerMoves = {
             enemy.health = enemy.health - totalDamage;
             getPlayerDamage.innerHTML = 'You hit ' + Math.round(playerAttackValues[0]) + ' damage ' + playerAttackValues[1] + ' times, totalling ' + Math.round(playerAttackValues[0] * playerAttackValues[1]);
             if (enemy.health <= 0) {
-                nextEnemy();
-                getPlayerHealth.innerHTML = 'Health: ' + Math.round(player.health);
-                getEnemyHealth.innerHTML = 'Health: 0';
+                if (enemyDefeated === 3) {
+                    $('#winModal').modal('show')
+                    getCounter.innerHTML = '<p>Enemies Defeated: ' + enemyDefeated++ + '</p>';
+                } else {
+                    nextEnemy();
+                    getPlayerHealth.innerHTML = 'Health: ' + Math.round(player.health);
+                    getEnemyHealth.innerHTML = 'Health: 0';
+                    getCounter.innerHTML = '<p>Enemies Defeated: ' + enemyDefeated++ + '</p>';                  
+                }
             } else {
                 getEnemyHealth.innerHTML = 'Health: ' + Math.round(enemy.health);
                 // Enemy attacks
@@ -86,9 +93,14 @@ let PlayerMoves = {
                 enemy.health = enemy.health - totalDamage;
                 getPlayerDamage.innerHTML = 'You hit ' + Math.round(playerAttackValues[0]) + ' damage ' + playerAttackValues[1] + ' times, totalling ' + Math.round(playerAttackValues[0] * playerAttackValues[1]);
                 if (enemy.health <= 0) {
-                    nextEnemy();
-                    getEnemyHealth.innerHTML = 'Health: 0';
-                    getPlayerHealth.innerHTML = 'Health: ' + Math.round(player.health);
+                    if (enemyDefeated === 3) {
+                        $('#winModal').modal('show')
+                        getCounter.innerHTML = '<p>Enemies Defeated: ' + enemyDefeated++ + '</p>';
+                    } else {
+                        nextEnemy();
+                        getEnemyHealth.innerHTML = 'Health: 0';
+                        getPlayerHealth.innerHTML = 'Health: ' + Math.round(player.health);                        
+                    }
                 } else {
                     getEnemyHealth.innerHTML = 'Health: ' + Math.round(enemy.health);
                 }
@@ -128,6 +140,7 @@ let PlayerMoves = {
         let getEnemyHealth = document.querySelector(".health-enemy");
         let getPlayerDamage = document.querySelector(".player-damage");
         let getEnemyDamage = document.querySelector(".enemy-damage");
+        let getCounter = document.querySelector(".enemy-counter");
         // Initiate attacks
         if (getPlayerSpeed >= getEnemySpeed) {
             let playerAttackValues = playerAttack();
@@ -135,9 +148,15 @@ let PlayerMoves = {
             enemy.health = enemy.health - totalDamage;
             getPlayerDamage.innerHTML = 'You hit ' + Math.round(playerAttackValues[0]) + ' damage ' + playerAttackValues[1] + ' times, totalling ' + Math.round(playerAttackValues[0] * playerAttackValues[1]);
             if (enemy.health <= 0) {
-                nextEnemy();
-                getPlayerHealth.innerHTML = 'Health: ' + Math.round(player.health);
-                getEnemyHealth.innerHTML = 'Health: 0';
+                if (enemyDefeated === 3) {
+                    $('#winModal').modal('show')
+                    getCounter.innerHTML = '<p>Enemies Defeated: ' + enemyDefeated++ + '</p>';
+                } else {
+                    nextEnemy();
+                    getPlayerHealth.innerHTML = 'Health: ' + Math.round(player.health);
+                    getEnemyHealth.innerHTML = 'Health: 0';
+                    getCounter.innerHTML = '<p>Enemies Defeated: ' + enemyDefeated++ + '</p>';                     
+                }
             } else {
                 getEnemyHealth.innerHTML = 'Health: ' + Math.round(enemy.health);
                 // Enemy attacks
@@ -171,9 +190,15 @@ let PlayerMoves = {
                 enemy.health = enemy.health - totalDamage;
                 getPlayerDamage.innerHTML = 'You hit ' + Math.round(playerAttackValues[0]) + ' damage ' + playerAttackValues[1] + ' times, totalling ' + Math.round(playerAttackValues[0] * playerAttackValues[1]);
                 if (enemy.health <= 0) {
-                    nextEnemy();
-                    getEnemyHealth.innerHTML = 'Health: 0';
-                    getPlayerHealth.innerHTML = 'Health: ' + Math.round(player.health);
+                    if (enemyDefeated === 3) {
+                        $('#winModal').modal('show')
+                        getCounter.innerHTML = '<p>Enemies Defeated: ' + enemyDefeated++ + '</p>';
+                    } else {
+                        nextEnemy();
+                        getEnemyHealth.innerHTML = 'Health: 0';
+                        getPlayerHealth.innerHTML = 'Health: ' + Math.round(player.health);
+                        getCounter.innerHTML = '<p>Enemies Defeated: ' + enemyDefeated++ + '</p>';                         
+                    }
                 } else {
                     getEnemyHealth.innerHTML = 'Health: ' + Math.round(enemy.health);
                 }
@@ -211,15 +236,22 @@ let PlayerMoves = {
         let getEnemyHealth = document.querySelector(".health-enemy");
         let getPlayerDamage = document.querySelector(".player-damage");
         let getEnemyDamage = document.querySelector(".enemy-damage");
+        let getCounter = document.querySelector(".enemy-counter");
 
         // Initiate attacks
         if (getPlayerSpeed >= getEnemySpeed) {
             playerHeal();
             getPlayerDamage.innerHTML = 'You healed for 250';
             if (enemy.health <= 0) {
-                nextEnemy();
-                getPlayerHealth.innerHTML = 'Health: ' + Math.round(player.health);
-                getEnemyHealth.innerHTML = 'Health: 0';
+                if (enemyDefeated === 3) {
+                    $('#winModal').modal('show')
+                    getCounter.innerHTML = '<p>Enemies Defeated: ' + enemyDefeated++ + '</p>';
+                } else {
+                    nextEnemy();
+                    getPlayerHealth.innerHTML = 'Health: ' + Math.round(player.health);
+                    getEnemyHealth.innerHTML = 'Health: 0';
+                    getCounter.innerHTML = '<p>Enemies Defeated: ' + enemyDefeated++ + '</p>';                     
+                }
             } else {
                 getEnemyHealth.innerHTML = 'Health: ' + enemy.health;
                 // Enemy attacks
@@ -251,9 +283,15 @@ let PlayerMoves = {
                 playerHeal();
                 getPlayerDamage.innerHTML = 'You healed for 250';
                 if (enemy.health <= 0) {
-                    nextEnemy();
-                    getEnemyHealth.innerHTML = 'Health: 0';
-                    getPlayerHealth.innerHTML = 'Health: ' + Math.round(player.health);
+                    if (enemyDefeated === 3) {
+                        $('#winModal').modal('show')
+                        getCounter.innerHTML = '<p>Enemies Defeated: ' + enemyDefeated++ + '</p>';
+                    } else {
+                        nextEnemy();
+                        getEnemyHealth.innerHTML = 'Health: 0';
+                        getPlayerHealth.innerHTML = 'Health: ' + Math.round(player.health);
+                        getCounter.innerHTML = '<p>Enemies Defeated: ' + enemyDefeated++ + '</p>';                         
+                    }
                 } else {
                     getPlayerHealth.innerHTML = 'Health: ' + Math.round(player.health);
                     getEnemyHealth.innerHTML = 'Health: ' + Math.round(enemy.health);
