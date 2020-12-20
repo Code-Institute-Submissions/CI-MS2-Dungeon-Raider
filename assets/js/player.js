@@ -8,7 +8,7 @@ function Player(classType, health, strength, agility, speed) {
     this.agility = agility;
     this.speed = speed;
 }
-
+// Hero moves
 let PlayerMoves = {
     // Attack - Player move
     calcAttack: function () {
@@ -38,7 +38,7 @@ let PlayerMoves = {
             let attackValues = [calcOutputDamage, numberOfHits];
             return attackValues;            
         };
-        // Get Player/Enemy health and damage to change later
+        // Get Player/Enemy health, damage and enemy defeated counter to change later
         let getPlayerHealth = document.querySelector(".health-player");
         let getEnemyHealth = document.querySelector(".health-enemy");
         let getPlayerDamage = document.querySelector(".player-damage");
@@ -139,7 +139,7 @@ let PlayerMoves = {
             let attackValues = [calcOutputDamage, numberOfHits];
             return attackValues;           
         };
-        // Get Player/Enemy health and damage to change later
+        // Get Player/Enemy health, damage and enemy defeated counter to change later
         let getPlayerHealth = document.querySelector(".health-player");
         let getEnemyHealth = document.querySelector(".health-enemy");
         let getPlayerDamage = document.querySelector(".player-damage");
@@ -239,7 +239,7 @@ let PlayerMoves = {
             let attackValues = [calcOutputDamage, numberOfHits];
             return attackValues;            
         };
-        // Get Player/Enemy health and damage to change later
+        // Get Player/Enemy health, damage and enemy defeated counter to change later
         let getPlayerHealth = document.querySelector(".health-player");
         let getEnemyHealth = document.querySelector(".health-enemy");
         let getPlayerDamage = document.querySelector(".player-damage");
