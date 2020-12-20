@@ -40,6 +40,7 @@ h1 {
 .counter p {
     font-size: 1.6rem;
     margin-bottom: .5rem;
+    margin-top: .5rem;
 }
 .header h3 em {
     font-size: 1.6rem;
