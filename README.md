@@ -320,6 +320,8 @@ There were a few changes that were made after the initial wireframe was created,
 
 * Tested the win and lose modal restart buttons
 
+* Tested the 404 page appears and the link goes back to the main page
+
 * CSS was put through a [CSS Autoprefixer](https://autoprefixer.github.io/) and there were no changes to be made
 
   
